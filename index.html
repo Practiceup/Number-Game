@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Guess The Number Game</title>
+</head>
+
+<body>
+  <div class="h1Box">
+    <h1>GUESS MY NUMBER</h1>
+    <p>Guess the number between 1 and 100</p>
+  </div>
+  <div class="container">
+    <div id="score">
+      <p class="score">
+        Score: 10
+      </p>
+      <p class="best">
+        High Score: 0
+      </p>
+    </div>
+    <button class="reset" onclick="resetGame()">Reset</button>
+    <div class="innerBox">
+      <img id="icon" src="https://img.icons8.com/color/96/null/why-quest.png" />
+      <input type="number" placeholder="Guess a number" id="input-el" min="1" max="100" required>
+      <br>
+      <button class="btn">Check</button>
+      <p class="winLose"></p>
+      <p class="comment"></p>
+      <p class="score"></p>
+      <p class="best"></p>
+      <p class="show"></p>
+      <p class="howClose"></p>
+    </div>
+    <div id="history">
+      <p class="guessHistory">
+        Guess History
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

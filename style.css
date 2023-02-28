@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(17, 54, 82);
+    height: 100vh;  
+}
+
+.h1Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(216,233,242); 
+}
+
+#score {
+    float: left;
+}
+
+#reset {
+    float: right;
+}
+
+.container {
+    background-color: rgb(216, 233, 242);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    margin-top: 2%;
+}
+
+.icon {
+    align-items: center;
+}
+
+input {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(216, 233, 242);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(73, 113, 174);
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.innerBox {
+    background-color: rgb(255, 131, 61);
+    padding: 10%;
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#history {
+    background-color: rgb(17, 54, 82);
+    color: beige;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+button:disabled {
+  pointer-events: none;
+}
